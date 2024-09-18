@@ -44,9 +44,12 @@
         color: white;
         text-decoration: none;
       }
-      .link a:hover {
+      .link a:hover,
+      .link a.active {
         color: rgb(67, 47, 5);
-        transition: 250ms;
+      }
+      .link a.active {
+        font-weight: bold;
       }
 
       .Footer {
@@ -69,7 +72,9 @@
         <h3>Program Study</h3>
         <nav class="link">
           <a href="tekkom.html" target="_blank">D3 Teknik Komputer</a><br />
-          <a href="mi.html" target="_blank">D3 Manajemen Informatika</a><br />
+          <a class="active" href="mi.html" target="_blank"
+            >D3 Manajemen Informatika</a
+          ><br />
           <a href="trpl.html" target="_blank"
             >D4 Teknologi Rekayasa Perangkat Lunak</a
           ><br />

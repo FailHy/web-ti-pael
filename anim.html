@@ -44,9 +44,12 @@
         color: white;
         text-decoration: none;
       }
-      .link a:hover {
+      .link a:hover,
+      .link a.active {
         color: rgb(67, 47, 5);
-        transition: 250ms;
+      }
+      .link a.active {
+        font-weight: bold;
       }
 
       .Footer {
@@ -73,7 +76,8 @@
           <a href="trpl.html" target="_blank"
             >D4 Teknologi Rekayasa Perangkat Lunak</a
           ><br />
-          <a href="anim.html" target="_blank">D4 Animasi</a><br />
+          <a class="active" href="anim.html" target="_blank">D4 Animasi</a
+          ><br />
         </nav>
       </div>
 
