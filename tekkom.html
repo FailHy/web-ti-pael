@@ -40,13 +40,17 @@
         float: left;
       }
 
-      .link {
+      .link a {
         color: white;
         text-decoration: none;
       }
-      .link:hover {
+      .link a:hover,
+      .link a.active {
         color: rgb(67, 47, 5);
-        transition: 250ms;
+      }
+
+      .link a.active {
+        font-weight: bold;
       }
 
       .Footer {
@@ -67,15 +71,16 @@
     <div class="Main">
       <div class="Sidebar">
         <h3>Program Study</h3>
-        <a class="link" href="tekkom.html" target="_blank">D3 Teknik Komputer</a
-        ><br />
-        <a class="link" href="mi.html" target="_blank"
-          >D3 Manajemen Informatika</a
-        ><br />
-        <a class="link" href="trpl.html" target="_blank"
-          >D4 Teknologi Rekayasa Perangkat Lunak</a
-        ><br />
-        <a class="link" href="anim.html" target="_blank">D4 Animasi</a><br />
+        <nav class="link">
+          <a class="active" href="tekkom.html" target="_blank"
+            >D3 Teknik Komputer</a
+          ><br />
+          <a href="mi.html" target="_blank">D3 Manajemen Informatika</a><br />
+          <a href="trpl.html" target="_blank"
+            >D4 Teknologi Rekayasa Perangkat Lunak</a
+          ><br />
+          <a href="anim.html" target="_blank">D4 Animasi</a><br />
+        </nav>
       </div>
 
       <div class="Content">

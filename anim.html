@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ini Animasi</title>
+    <title>Belajar Div dan CSS Layout</title>
+    <meta name="author" content="Fail Hylmi Khalil" />
+    <style>
+      body {
+        font-family: Poppins;
+        margin: 0;
+        padding: 0;
+      }
+
+      .Header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 2%;
+      }
+
+      .Main {
+        display: flex;
+      }
+
+      .Sidebar {
+        background-color: #fabc3f;
+        color: white;
+        text-align: left;
+        height: 250px;
+        padding-left: 10px;
+        width: 20%;
+        float: left;
+      }
+
+      .Content {
+        background-color: #674636;
+        color: white;
+        height: 250px;
+        padding-left: 5px;
+        width: 80%;
+        float: left;
+      }
+
+      .link a {
+        color: white;
+        text-decoration: none;
+      }
+      .link a:hover {
+        color: rgb(67, 47, 5);
+        transition: 250ms;
+      }
+
+      .Footer {
+        background-color: #800000;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
-    <h1>Bonjour re Animasi</h1>
+    <div class="Header">
+      <img src="" alt="" />
+      <h1>Animasi</h1>
+    </div>
+
+    <div class="Main">
+      <div class="Sidebar">
+        <h3>Program Study</h3>
+        <nav class="link">
+          <a href="tekkom.html" target="_blank">D3 Teknik Komputer</a><br />
+          <a href="mi.html" target="_blank">D3 Manajemen Informatika</a><br />
+          <a href="trpl.html" target="_blank"
+            >D4 Teknologi Rekayasa Perangkat Lunak</a
+          ><br />
+          <a href="anim.html" target="_blank">D4 Animasi</a><br />
+        </nav>
+      </div>
+
+      <div class="Content">
+        <h3>Selamat Datang</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          aliquam porta purus, a elementum quam finibus vel. Phasellus et nisi
+          in purus venenatis ultricies non in odio. Praesent in nibh est. Sed
+          porttitor risus vitae mauris condimentum lobortis. Donec consectetur
+          erat eu nisi lacinia efficitur. Aenean malesuada magna erat, et tempor
+          purus hendrerit sit amet. Phasellus bibendum, odio id molestie
+          sollicitudin, justo purus dapibus lectus, sed sodales justo neque in
+          diam. Phasellus dapibus lorem nec ipsum efficitur, id bibendum ligula
+          luctus.
+        </p>
+      </div>
+    </div>
+
+    <div class="Footer">
+      <h5>@ 2024 TI PNP | Politeknik Negeri Padang</h5>
+    </div>
   </body>
 </html>
